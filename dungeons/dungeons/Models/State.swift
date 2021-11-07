@@ -22,6 +22,8 @@ class State {
     var animate_from: CGFloat?
     var animate_to: CGFloat?
     var animate_values: [Int]?
+    var new_x: CGFloat?
+    var new_y: CGFloat?
     var animate_keyTimes: [NSNumber]?
     var animate_duration: CGFloat?
     
@@ -43,6 +45,8 @@ class State {
         animate_values: [Int]?,
         animate_keyTimes: [NSNumber]?,
         animate_duration: CGFloat?,
+        new_x: CGFloat?,
+        new_y: CGFloat?,
         A_next_state: State?,
         B_next_state: State?
     ) {
@@ -52,14 +56,43 @@ class State {
         self.A_text = A_text
         self.B_text = B_text
         
-        if let state = A_next_state { self.A_next_state = state}
-        if let state = B_next_state {
-            self.B_next_state = state
-        }
+        if let state = A_next_state { self.A_next_state = state }
+        if let state = B_next_state { self.B_next_state = state }
     }
         
     // MARK: responses/choices
     // return value used to set ViewController.current_level or ViewController.current_state
+    func translation_params() -> (fromValue: CGFloat, toValue: CGFloat, duration: Double, x: CGFloat, y: CGFloat) {
+        guard
+            let fromValue = self.animate_from,
+            let toValue = self.animate_to,
+            let duration = self.animate_duration,
+            let x = self.new_x,
+            let y = self.new_y
+        else { fatalError("current_state.get_aniparam() error: invalid animation parameters.\nattempted animation: \(name).translation_y") }
+        
+        return (fromValue, toValue, duration, x, y)
+    }
+    
+    func scale_params() -> (fromValue: CGFloat, toValue: CGFloat, duration: Double) {
+        guard
+            let fromValue = self.animate_from,
+            let toValue = self.animate_to,
+            let duration = self.animate_duration
+        else { fatalError("current_state.get_aniparam() error: invalid animation parameters.\nattempted animation: \(name).scale") }
+        
+        return (fromValue, toValue, duration)
+    }
+    
+    func shake_params() -> (values: [Int], keyTimes : [NSNumber], duration: Double) {
+        guard
+            let values = self.animate_values,
+            let keyTimes = self.animate_keyTimes,
+            let duration = self.animate_duration
+        else { fatalError("current_state.get_aniparam() error: invalid animation parameters.\nattempted animation: \(name).shake") }
+        
+        return (values, keyTimes, duration)
+    }
     
     // INSERT INCREMENTER HERE
     func load_next_level() {}

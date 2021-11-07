@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Levels {
     
@@ -13,15 +14,17 @@ class Levels {
     
     public var levels: [Level]
     
+    public var img_view: UIImageView
+    
     // MARK: levels & respective states initialization
     init() {
         // MARK: state declaration
-        let level_1_fail = State (
+        let lvl_0_fail = State (
             name: "Failed: declined entrance decision",
             number: -1,
-            dialouge: "How unremarkable...",
+            dialouge: "Pussies don't get shit done",
             A_text: "...",
-            B_text: "...",
+            B_text: "Restart?",
             char_img: "",
             animation: nil,
             animate_from: nil,
@@ -29,15 +32,35 @@ class Levels {
             animate_values: nil,
             animate_keyTimes: nil,
             animate_duration: nil,
+            new_x: nil,
+            new_y: nil,
             A_next_state: nil,
             B_next_state: nil
         )
-        let level_1_welcome_2 = State (
-            name: "Welcome dialogue 2",
+        let lvl_0_stt_2 = State (
+            name: "Entering dungeon decision confirmation",
+            number: 2,
+            dialouge: "You open the door slightly and hear echos of ghoulish screams. Are you sure you want proceed?",
+            A_text: "Fo' sure",
+            B_text: "Aw hell nah",
+            char_img: "",
+            animation: nil,
+            animate_from: nil,
+            animate_to: nil,
+            animate_values: nil,
+            animate_keyTimes: nil,
+            animate_duration: nil,
+            new_x: nil,
+            new_y: nil,
+            A_next_state: nil,
+            B_next_state: lvl_0_fail
+        )
+        let lvl_0_stt_1 = State (
+            name: "Entering dungeon decision confirmation",
             number: 1,
-            dialouge: "What is that thing?",
-            A_text: "...",
-            B_text: "...",
+            dialouge: "You open the door slightly and hear echos of ghoulish screams. Are you sure you want proceed?",
+            A_text: "Momma ain't raise no bitch",
+            B_text: "Aw hell nah",
             char_img: "",
             animation: nil,
             animate_from: nil,
@@ -45,15 +68,17 @@ class Levels {
             animate_values: nil,
             animate_keyTimes: nil,
             animate_duration: nil,
-            A_next_state: nil,
-            B_next_state: nil
+            new_x: nil,
+            new_y: nil,
+            A_next_state: lvl_0_stt_2,
+            B_next_state: lvl_0_fail
         )
-        let level_1_welcome_1 = State (
-            name: "Welcome dialogue 1",
+        let lvl_0_stt_0 = State (
+            name: "Entering dungeon decision",
             number: 0,
-            dialouge: "Hello...?",
-            A_text: "...",
-            B_text: "...",
+            dialouge: "You, for whatever reason, wake up in front of a dungeon. Do you go in?",
+            A_text: "Hell yes",
+            B_text: "Nah, I'm good",
             char_img: "",
             animation: nil,
             animate_from: nil,
@@ -61,23 +86,28 @@ class Levels {
             animate_values: nil,
             animate_keyTimes: nil,
             animate_duration: nil,
-            A_next_state: level_1_welcome_2,
-            B_next_state: level_1_welcome_2
+            new_x: nil,
+            new_y: nil,
+            A_next_state: lvl_0_stt_1,
+            B_next_state: lvl_0_fail
         )
-        let level_1_states: [State] = [
-            level_1_welcome_1,
-            level_1_fail,
+        let level_0_states: [State] = [
+            lvl_0_stt_0,
+            lvl_0_stt_1,
+            lvl_0_stt_2,
+            lvl_0_fail
         ]
+        
         // MARK: level declaration
-        let level_1 = Level (
+        let level_0 = Level (
             name: "Dungeon Entrance",
             number: 0,
-            states: level_1_states,
+            states: level_0_states,
             next_level: nil
         )
         
         levels = [
-            level_1
+            level_0
         ]
     }
     
