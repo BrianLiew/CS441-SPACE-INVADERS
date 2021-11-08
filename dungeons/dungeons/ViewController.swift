@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     let background_view = UIImageView(frame: CGRect(x: 0, y: 0, width: screen_width, height: screen_height / 2))
     let control_background_view = UIImageView(frame: CGRect(x: 0, y: screen_height / 2, width: screen_width, height: screen_height / 2))
-    var img_view = UIImageView(frame: CGRect(x: (screen_width - 300) / 2, y: screen_height / 2 - 300, width: 300, height: 300))
+    var img_view = UIImageView(frame: CGRect(x: screen_width / 2 - 150, y: screen_height / 2, width: 300, height: 300))
     var dialogue_box = UILabel(frame: CGRect(x: 0, y: screen_height / 2, width: screen_width, height: screen_height / 4))
     let left_button = UIButton(type: .custom)
     let right_button = UIButton()
@@ -70,6 +70,9 @@ class ViewController: UIViewController {
         view.addSubview(dialogue_box)
         view.addSubview(left_button)
         view.addSubview(right_button)
+        
+        view.sendSubviewToBack(img_view)
+        view.sendSubviewToBack(background_view)
                 
         left_button.translatesAutoresizingMaskIntoConstraints = false
         right_button.translatesAutoresizingMaskIntoConstraints = false
@@ -100,20 +103,24 @@ class ViewController: UIViewController {
     }
     
     func update_UI() -> Void {
-        guard let state = current_state else { fatalError("ViewController update_UI() failed: cannot find state") }
+        guard let state = current_state else { fatalError("ViewController update_UI() failed: cannot find current or next state") }
 
         if let image = state.char_img { img_view.image = UIImage(named: image) }
         
-        dialogue_box.text = state.dialouge
+        dialogue_box.text = state.dialogue
         left_button.setTitle(state.A_text, for: .normal)
         right_button.setTitle(state.B_text, for: .normal)
+        
+        animate()
     }
     
     func animate() -> Void {
-        switch (current_state?.animation) {
+        guard let state = current_state else { fatalError("ViewController animate() failed: cannot find current or next state") }
+        print(state.animation)
+        switch (state.animation) {
         case "translation_y":
             guard let params = current_state?.translation_params() else { fatalError("view.animate() error: unwrapping translation parameters failed") }
-            aniinstance.translation_y(from: params.0, to: params.1, duration: params.2, new_x: params.3, new_y: params.4)
+            aniinstance.translation_y(from: params.0, to: params.1, duration: params.2)
         case "scale":
             guard let params = current_state?.scale_params() else { fatalError("view.animate() error: unwrapping scale parameters failed") }
             aniinstance.scale(from: params.0, to: params.1, duration: params.2)

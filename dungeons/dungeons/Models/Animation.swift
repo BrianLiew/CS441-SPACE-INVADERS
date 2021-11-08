@@ -10,13 +10,14 @@ import UIKit
 
 class Animation {
     
-    var view: UIView
+    var view: UIImageView
     
-    init(view: UIView) { self.view = view }
+    init(view: UIImageView) { self.view = view }
     
     // MARK: animation methods
     
-    func translation_y(from: CGFloat, to: CGFloat, duration: Double, new_x: CGFloat, new_y: CGFloat) -> Void {
+    func translation_y(from: CGFloat, to: CGFloat, duration: Double) -> Void {
+        print("lation called")
         let animation = CABasicAnimation()
         
         animation.keyPath = "position.y"
@@ -25,7 +26,7 @@ class Animation {
         animation.duration = duration
         
         view.layer.add(animation, forKey: "translation_y")
-        view.layer.position = CGPoint(x: new_x, y: new_y)
+        view.layer.position = CGPoint(x: view.layer.position.x, y: to)
     }
     
     func scale(from: CGFloat, to: CGFloat, duration: Double) -> Void {
