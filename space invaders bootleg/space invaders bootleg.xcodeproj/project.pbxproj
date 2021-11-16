@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F12E6CBB2742AD4D00915F05 /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F12E6CBA2742AD4D00915F05 /* GameStartScene.sks */; };
+		F12E6CBD2742BBDD00915F05 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F12E6CBC2742BBDD00915F05 /* GameOverScene.sks */; };
+		F12E6CBF2742D3D000915F05 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12E6CBE2742D3D000915F05 /* Singleton.swift */; };
+		F19608FD273C82D000E65A40 /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19608FC273C82D000E65A40 /* GameStartScene.swift */; };
+		F19608FF273C82D900E65A40 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19608FE273C82D900E65A40 /* GameOverScene.swift */; };
+		F19858B7273C11D300687EFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19858B6273C11D300687EFC /* AppDelegate.swift */; };
+		F19858B9273C11D300687EFC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F19858B8273C11D300687EFC /* GameScene.sks */; };
+		F19858BB273C11D300687EFC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F19858BA273C11D300687EFC /* Actions.sks */; };
+		F19858BD273C11D300687EFC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19858BC273C11D300687EFC /* GameScene.swift */; };
+		F19858BF273C11D300687EFC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19858BE273C11D300687EFC /* GameViewController.swift */; };
+		F19858C2273C11D300687EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19858C0273C11D300687EFC /* Main.storyboard */; };
+		F19858C4273C11D400687EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19858C3273C11D400687EFC /* Assets.xcassets */; };
+		F19858C7273C11D400687EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19858C5273C11D400687EFC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F12E6CBA2742AD4D00915F05 /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
+		F12E6CBC2742BBDD00915F05 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		F12E6CBE2742D3D000915F05 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		F19608FC273C82D000E65A40 /* GameStartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
+		F19608FE273C82D900E65A40 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		F19858B3273C11D300687EFC /* space invaders bootleg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "space invaders bootleg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19858B6273C11D300687EFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F19858B8273C11D300687EFC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F19858BA273C11D300687EFC /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F19858BC273C11D300687EFC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F19858BE273C11D300687EFC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F19858C1273C11D300687EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F19858C3273C11D400687EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F19858C6273C11D400687EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F19858B0273C11D300687EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F19858AA273C11D300687EFC = {
+			isa = PBXGroup;
+			children = (
+				F19858B5273C11D300687EFC /* space invaders bootleg */,
+				F19858B4273C11D300687EFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F19858B4273C11D300687EFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F19858B3273C11D300687EFC /* space invaders bootleg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F19858B5273C11D300687EFC /* space invaders bootleg */ = {
+			isa = PBXGroup;
+			children = (
+				F19858B6273C11D300687EFC /* AppDelegate.swift */,
+				F19858B8273C11D300687EFC /* GameScene.sks */,
+				F12E6CBA2742AD4D00915F05 /* GameStartScene.sks */,
+				F12E6CBC2742BBDD00915F05 /* GameOverScene.sks */,
+				F19858BA273C11D300687EFC /* Actions.sks */,
+				F19858BC273C11D300687EFC /* GameScene.swift */,
+				F19858BE273C11D300687EFC /* GameViewController.swift */,
+				F19608FC273C82D000E65A40 /* GameStartScene.swift */,
+				F19608FE273C82D900E65A40 /* GameOverScene.swift */,
+				F12E6CBE2742D3D000915F05 /* Singleton.swift */,
+				F19858C0273C11D300687EFC /* Main.storyboard */,
+				F19858C3273C11D400687EFC /* Assets.xcassets */,
+				F19858C5273C11D400687EFC /* LaunchScreen.storyboard */,
+			);
+			path = "space invaders bootleg";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F19858B2273C11D300687EFC /* space invaders bootleg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F19858CA273C11D400687EFC /* Build configuration list for PBXNativeTarget "space invaders bootleg" */;
+			buildPhases = (
+				F19858AF273C11D300687EFC /* Sources */,
+				F19858B0273C11D300687EFC /* Frameworks */,
+				F19858B1273C11D300687EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "space invaders bootleg";
+			productName = "space invaders bootleg";
+			productReference = F19858B3273C11D300687EFC /* space invaders bootleg.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F19858AB273C11D300687EFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F19858B2273C11D300687EFC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = F19858AE273C11D300687EFC /* Build configuration list for PBXProject "space invaders bootleg" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F19858AA273C11D300687EFC;
+			productRefGroup = F19858B4273C11D300687EFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F19858B2273C11D300687EFC /* space invaders bootleg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F19858B1273C11D300687EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12E6CBD2742BBDD00915F05 /* GameOverScene.sks in Resources */,
+				F19858C2273C11D300687EFC /* Main.storyboard in Resources */,
+				F12E6CBB2742AD4D00915F05 /* GameStartScene.sks in Resources */,
+				F19858B9273C11D300687EFC /* GameScene.sks in Resources */,
+				F19858C4273C11D400687EFC /* Assets.xcassets in Resources */,
+				F19858C7273C11D400687EFC /* LaunchScreen.storyboard in Resources */,
+				F19858BB273C11D300687EFC /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F19858AF273C11D300687EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19608FF273C82D900E65A40 /* GameOverScene.swift in Sources */,
+				F19858BD273C11D300687EFC /* GameScene.swift in Sources */,
+				F19608FD273C82D000E65A40 /* GameStartScene.swift in Sources */,
+				F19858BF273C11D300687EFC /* GameViewController.swift in Sources */,
+				F19858B7273C11D300687EFC /* AppDelegate.swift in Sources */,
+				F12E6CBF2742D3D000915F05 /* Singleton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F19858C0273C11D300687EFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F19858C1273C11D300687EFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F19858C5273C11D400687EFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F19858C6273C11D400687EFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F19858C8273C11D400687EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F19858C9273C11D400687EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F19858CB273C11D400687EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPK4BTV343;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liew.brian.space-invaders-bootleg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F19858CC273C11D400687EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPK4BTV343;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liew.brian.space-invaders-bootleg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F19858AE273C11D300687EFC /* Build configuration list for PBXProject "space invaders bootleg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19858C8273C11D400687EFC /* Debug */,
+				F19858C9273C11D400687EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F19858CA273C11D400687EFC /* Build configuration list for PBXNativeTarget "space invaders bootleg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19858CB273C11D400687EFC /* Debug */,
+				F19858CC273C11D400687EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F19858AB273C11D300687EFC /* Project object */;
+}
